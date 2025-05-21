@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - Distribuidora de Materiales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MaterialesPro</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html" class="active">Categorías</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="categories-hero">
+        <div class="container">
+            <h2>Nuestras Categorías de Productos</h2>
+            <p>Explore nuestra amplia gama de materiales para sus proyectos</p>
+        </div>
+    </section>
+
+    <section class="category-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar productos...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="all">Todas las categorías</option>
+                        <option value="construccion">Construcción</option>
+                        <option value="acabados">Acabados</option>
+                        <option value="herramientas">Herramientas</option>
+                        <option value="electricidad">Electricidad</option>
+                        <option value="plomeria">Plomería</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-category="all">Todos</button>
+                <button class="tab-btn" data-category="construccion">Construcción</button>
+                <button class="tab-btn" data-category="acabados">Acabados</button>
+                <button class="tab-btn" data-category="herramientas">Herramientas</button>
+                <button class="tab-btn" data-category="electricidad">Electricidad</button>
+                <button class="tab-btn" data-category="plomeria">Plomería</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsContainer">
+                <!-- Categoría: Construcción -->
+                <div class="product-card" data-category="construccion">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Cemento Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cemento Premium</h3>
+                        <p>Cemento de alta resistencia para todo tipo de construcciones</p>
+                        <div class="product-price">$120.00 / Saco</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="construccion">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Varillas de Acero">
+                    </div>
+                    <div class="product-info">
+                        <h3>Varillas de Acero</h3>
+                        <p>Varillas de acero reforzado en diferentes calibres</p>
+                        <div class="product-price">$85.00 / Pieza</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="construccion">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Ladrillos Cerámicos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ladrillos Cerámicos</h3>
+                        <p>Ladrillos de alta calidad para muros y fachadas</p>
+                        <div class="product-price">$5.50 / Unidad</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Categoría: Acabados -->
+                <div class="product-card" data-category="acabados">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Pinturas Industriales">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pinturas Industriales</h3>
+                        <p>Pinturas de alta durabilidad para interiores y exteriores</p>
+                        <div class="product-price">$350.00 / Cubeta</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="acabados">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Azulejos Cerámicos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Azulejos Cerámicos</h3>
+                        <p>Azulejos para baños y cocinas en diversos diseños</p>
+                        <div class="product-price">$180.00 / m²</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="acabados">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Pisos Laminados">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pisos Laminados</h3>
+                        <p>Pisos laminados resistentes al agua y al desgaste</p>
+                        <div class="product-price">$250.00 / m²</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Categoría: Herramientas -->
+                <div class="product-card" data-category="herramientas">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Taladro Eléctrico">
+                    </div>
+                    <div class="product-info">
+                        <h3>Taladro Eléctrico</h3>
+                        <p>Taladro eléctrico profesional con accesorios</p>
+                        <div class="product-price">$1,200.00</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="herramientas">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Juego de Llaves">
+                    </div>
+                    <div class="product-info">
+                        <h3>Juego de Llaves</h3>
+                        <p>Juego completo de llaves métricas y estándar</p>
+                        <div class="product-price">$450.00</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Categoría: Electricidad -->
+                <div class="product-card" data-category="electricidad">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Cable Eléctrico">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cable Eléctrico</h3>
+                        <p>Cable eléctrico de alta calidad por metro</p>
+                        <div class="product-price">$15.00 / m</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="electricidad">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Interruptores">
+                    </div>
+                    <div class="product-info">
+                        <h3>Interruptores</h3>
+                        <p>Interruptores y tomacorrientes de diferentes modelos</p>
+                        <div class="product-price">$35.00 / Unidad</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Categoría: Plomería -->
+                <div class="product-card" data-category="plomeria">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Tubería PVC">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tubería PVC</h3>
+                        <p>Tubería de PVC para instalaciones hidráulicas</p>
+                        <div class="product-price">$45.00 / m</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="plomeria">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Grifería">
+                    </div>
+                    <div class="product-info">
+                        <h3>Grifería</h3>
+                        <p>Grifos y llaves para baño y cocina</p>
+                        <div class="product-price">$280.00 / Unidad</div>
+                        <a href="#" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MaterialesPro</h2>
+                    <p>Calidad y servicio garantizado</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="categorias.html">Categorías</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MaterialesPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

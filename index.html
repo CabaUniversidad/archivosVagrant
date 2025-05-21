@@ -1,30 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Café Artesanal</title>
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora de Materiales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Café Artesanal</h1>
-    <p>El sabor auténtico de los granos seleccionados</p>
-  </header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MaterialesPro</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section>
-      <h2>Nuestro Café</h2>
-      <p>Ofrecemos café de origen 100% colombiano, tostado de manera artesanal para conservar sus aromas y sabores naturales.</p>
-      <button id="moreBtn">Ver más</button>
-      <p id="extraInfo" class="hidden">Nuestro café es cultivado en zonas de alta montaña, sin pesticidas, y con prácticas sostenibles.</p>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Materiales de Calidad para sus Proyectos</h2>
+                <p>Ofrecemos la más amplia variedad de materiales para construcción, remodelación e industria</p>
+                <a href="categorias.html" class="btn">Ver Productos</a>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Café Artesanal. Todos los derechos reservados.</p>
-  </footer>
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Cemento Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cemento Premium</h3>
+                        <p>Cemento de alta resistencia para todo tipo de construcciones</p>
+                        <a href="categorias.html" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Varillas de Acero">
+                    </div>
+                    <div class="product-info">
+                        <h3>Varillas de Acero</h3>
+                        <p>Varillas de acero reforzado en diferentes calibres</p>
+                        <a href="categorias.html" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Ladrillos Cerámicos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ladrillos Cerámicos</h3>
+                        <p>Ladrillos de alta calidad para muros y fachadas</p>
+                        <a href="categorias.html" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Pinturas Industriales">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pinturas Industriales</h3>
+                        <p>Pinturas de alta durabilidad para interiores y exteriores</p>
+                        <a href="categorias.html" class="btn-small">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="./script.js"></script>
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>Somos una empresa líder en la distribución de materiales para la construcción, con más de 15 años de experiencia en el mercado. Ofrecemos productos de la más alta calidad a precios competitivos.</p>
+                    <p>Nuestro compromiso es brindar un servicio excepcional a nuestros clientes, asesorándolos en la elección de los mejores materiales para sus proyectos.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x300" alt="Nuestra Empresa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av. Principal #123, Ciudad Industrial</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+123 456 7890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@materialespro.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 8:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MaterialesPro</h2>
+                    <p>Calidad y servicio garantizado</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="categorias.html">Categorías</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MaterialesPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
